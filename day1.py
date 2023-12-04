@@ -4,8 +4,9 @@ with open("lines.txt") as f:
     f.close()
 acc=c=0
 for line in lines:
-    c, +=1
-    two_ints,num_index =[None]*2,[None] * len(line)
+    c +=1
+    two_ints =[None]*2
+    num_index = [None] * len(line)
     for i in range(len(word_num)):
         word = word_num[i]
         last_index_found = line.rfind(word)
@@ -26,5 +27,7 @@ for line in lines:
             two_ints[1] = int(num_index[i])
             break
     acc+=sum(two_ints)
-print(acc,"Acc")
+print(acc)
                 
+
+            
