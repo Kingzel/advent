@@ -1,7 +1,6 @@
 word_num = ['zero','one','two','three','four','five','six','seven','eight','nine']
 with open("lines.txt") as f:
     lines = f.readlines()   
-    f.close()
 acc=c=0
 for line in lines:
     c +=1

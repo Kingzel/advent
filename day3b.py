@@ -1,6 +1,5 @@
 with open("3.txt") as f:
     lines = f.readlines()   
-    f.close()
 
 def lookright(temp,col,row):
     if not lines[row][col].isdecimal():

@@ -1,6 +1,5 @@
 with open("2.txt") as f:
     lines = f.readlines()   
-    f.close()
 
 acc = 0
 games = []
