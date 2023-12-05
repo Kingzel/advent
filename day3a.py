@@ -1,9 +1,10 @@
-import time
 with open("3.txt") as f:
     lines = f.readlines()   
-    f.close()
 
-
+'''I check if there is a number right above or below the special character and if there is, I do not need to check
+diagonals for that direction anymore as if there cant be both a number directly above as well as in one of 
+the upper diagonals, as it would form one big number. 
+'''
 def lookright(temp,col,row):
     if not lines[row][col].isdecimal():
         return temp
