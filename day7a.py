@@ -55,12 +55,11 @@ for i in range(len(lines)):
     handobj= Hand(hand,bid)
     
     temp ={1:[],2:[],3:[],4:[],5:[]}
-    for i in range(hand.count('J'))
     seen = []
     for card in hand:
        
 
-            print(hand)
+        # print(hand)
         if card not in seen:
             temp[hand.count(card)].append(card)
             seen.append(card)
