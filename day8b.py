@@ -19,7 +19,6 @@ for line in lines:
     if code[len(code)-1] == 'A':
         starts.append(code)
 
-
 stepseach =[]
 for code in starts:
     reached = False
@@ -37,4 +36,4 @@ for code in starts:
         else:
             break
     stepseach.append(i)
-print(starts,stepseach,math.lcm(*stepseach))
+print(math.lcm(*stepseach))
